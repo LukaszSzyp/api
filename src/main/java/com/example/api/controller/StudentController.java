@@ -24,5 +24,9 @@ public class StudentController {
         studentDao.addStudent(student);
         return student;
     }
+    @GetMapping("/{id}")
+    public Student getStudentById(@PathVariable ("id") int id) {
+        return studentDao.getStudentById(id);
+    }
 
 }

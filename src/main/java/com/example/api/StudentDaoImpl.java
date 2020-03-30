@@ -25,4 +25,11 @@ public class StudentDaoImpl implements StudentDao{
     public List<Student> findAll() {
         return studentList;
     }
+
+    @Override
+    public Student getStudentById(int id) {
+        return studentList.get(id);
+    }
+
+
 }
