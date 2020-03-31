@@ -29,4 +29,9 @@ public class StudentController {
         return studentDao.getStudentById(id);
     }
 
+    @DeleteMapping("/{id}")
+    public Student deleteStudentById(@PathVariable ("id") int id){
+        return studentDao.deleteStudentById(id);
+    }
+
 }

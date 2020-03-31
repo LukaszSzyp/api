@@ -8,4 +8,5 @@ public interface StudentDao {
     List<Student> findAll();
     Student getStudentById (int id);
 
+    Student deleteStudentById(int id);
 }
